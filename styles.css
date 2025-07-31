@@ -1,0 +1,169 @@
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    animation: subtleGlow 5s infinite ease-in-out;
+}
+
+.header-content p {
+    margin: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#about {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.profile-pic {
+    width: 220px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid #ddd;
+}
+
+section ul {
+    padding-left: 0;
+}
+
+section > ul > li {
+    list-style-type: none;
+    margin-bottom: 1.5em;
+}
+
+section ul ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin-top: 0.5em;
+}
+
+section ul ul li {
+    margin-bottom: 0.5em;
+}
+
+.cv-container {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    background: none;
+    color: #333;
+    padding: 0;
+    text-decoration: none;
+    border-radius: 0;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: none;
+    color: #000;
+}
+
+.btn::before {
+    content: '[';
+    margin-right: 5px;
+}
+
+.btn::after {
+    content: ']';
+    margin-left: 5px;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes subtleGlow {
+    0% {
+        text-shadow: 0 0 1px rgba(51, 51, 51, 0.1);
+    }
+    50% {
+        text-shadow: 0 0 4px rgba(51, 51, 51, 0.3);
+    }
+    100% {
+        text-shadow: 0 0 1px rgba(51, 51, 51, 0.1);
+    }
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Helvetica', Arial, sans-serif;
+} 

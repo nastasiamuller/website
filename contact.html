@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nastasia Müller - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Nastasia Müller</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="papers.html">Papers</a></li>
+                    <li><a href="presentations.html">Presentations</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>
+                    Email: <span id="email-address"></span>
+                </p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Nastasia Müller</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        const user = 'mullernastasia';
+        const domain = 'gmail.com';
+        const emailSpan = document.getElementById('email-address');
+        emailSpan.innerHTML = `<a href="mailto:${user}@${domain}">${user}@${domain}</a>`;
+    </script>
+</body>
+</html> 
