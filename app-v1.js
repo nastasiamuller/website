@@ -102,7 +102,7 @@ particlesJS("particles-js", {
     },
   },
   retina_detect: true,
-});
+}); 
 
 // Modal functionality for image enlargement
 function openModal() {
