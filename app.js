@@ -102,4 +102,61 @@ particlesJS("particles-js", {
     },
   },
   retina_detect: true,
+});
+
+// Modal functionality for image enlargement
+function openModal() {
+    console.log('openModal called');
+    const modal = document.getElementById("imageModal");
+    if (modal) {
+        modal.style.display = "block";
+        document.body.style.overflow = "hidden"; // Prevent scrolling when modal is open
+        console.log('Modal opened successfully');
+    } else {
+        console.error('Modal element not found');
+    }
+}
+
+function closeModal() {
+    console.log('closeModal called');
+    const modal = document.getElementById("imageModal");
+    if (modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto"; // Restore scrolling
+        console.log('Modal closed successfully');
+    } else {
+        console.error('Modal element not found');
+    }
+}
+
+// Close modal when clicking outside the image
+window.onclick = function(event) {
+    const modal = document.getElementById("imageModal");
+    if (event.target === modal) {
+        closeModal();
+    }
+}
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeModal();
+    }
+});
+
+// Ensure functions are available globally
+window.openModal = openModal;
+window.closeModal = closeModal;
+
+// Add event listener as backup for click functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const profilePic = document.querySelector('.profile-pic');
+    if (profilePic) {
+        profilePic.addEventListener('click', function() {
+            console.log('Profile pic clicked via event listener');
+            openModal();
+        });
+    } else {
+        console.error('Profile pic element not found');
+    }
 }); 

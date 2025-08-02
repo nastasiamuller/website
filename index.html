@@ -25,7 +25,7 @@
         </header>
         <main>
             <section id="about">
-                <img src="Bewerbungsfoto.jpg" alt="Nastasia Müller" class="profile-pic">
+                <img src="Bewerbungsfoto.jpg" alt="Nastasia Müller" class="profile-pic" onclick="openModal()">
                 <p>
                     I am a Postdoctoral Researcher at the DFG Funded Project <a href="https://www.philosophie.hhu.de/kontakt-und-services/aktuelle-meldungen/newsmeldung/neues-forschungsprojekt-kognitiv-rationale-rekonstruktion" target="_blank" rel="noopener noreferrer"><i>Cognitive Rational Reconstruction (KoRaRe)</i></a> at Heinrich-Heine-Universität Düsseldorf.  In October 2025, I will begin my own DFG-funded research position with the project <i>Trust and Trustworthiness and their Implications for Testimony and Epistemic Authority</i> at Technische Universität Berlin.
                     <br><br>
@@ -36,6 +36,14 @@
                 <a href="CV_English_2025.pdf" class="btn" download>CV</a>
             </div>
         </main>
+        
+        <!-- Modal for enlarged image -->
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <img src="Bewerbungsfoto.jpg" alt="Nastasia Müller" class="modal-image">
+            </div>
+        </div>
         <footer>
             <p>&copy; 2025 Nastasia Müller</p>
         </footer>
