@@ -235,6 +235,83 @@ pre {
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
+/* Publication List Styles */
+#papers-list, #presentations-list, #teaching-list {
+    padding: 2rem 0;
+}
+
+#papers-list h2, #presentations-list h2, #teaching-list h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.publication-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.publication-list li {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.publication-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.publication-list .year {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #555;
+    flex-shrink: 0;
+    width: 60px;
+}
+
+.publication-list .publication-details {
+    flex-grow: 1;
+}
+
+.publication-list .publication-details .title {
+    font-weight: bold;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.publication-list .publication-details .journal {
+    margin: 0;
+    color: #666;
+    font-style: italic;
+}
+
+/* Responsive adjustments for publication lists */
+@media (max-width: 768px) {
+    .publication-list li {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    .publication-list .year {
+        width: auto;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+    }
+
+    #papers-list h2, #presentations-list h2, #teaching-list h2 {
+        font-size: 2rem;
+    }
+}
+
 /* Mobile Responsive Design */
 @media (max-width: 768px) {
     .container {
@@ -339,4 +416,31 @@ pre {
         right: 25px;
         font-size: 30px;
     }
+} 
+
+/* Contact Page Styles */
+#contact-info {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#contact-info h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.contact-details p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.contact-details a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 2px solid #ddd;
+    transition: border-bottom-color 0.2s ease;
+}
+
+.contact-details a:hover {
+    border-bottom-color: #333;
 } 

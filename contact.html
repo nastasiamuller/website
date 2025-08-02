@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nastasia Müller - Contact</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-v1.css">
 </head>
 <body>
     <div id="particles-js"></div>
@@ -24,11 +24,12 @@
             </nav>
         </header>
         <main>
-            <section id="contact">
-                <h2>Contact</h2>
-                <p>
-                    Email: <span id="email-address"></span>
-                </p>
+            <section id="contact-info">
+                <h2>Contact Me</h2>
+                <div class="contact-details">
+                    <p>Email: <a href="mailto:mullernastasia@gmail.com">mullernastasia@gmail.com</a></p>
+                    <p>You can also find me on <a href="https://www.linkedin.com/in/nastasia-muller" target="_blank">LinkedIn</a>.</p>
+                </div>
             </section>
         </main>
         <footer>
@@ -36,12 +37,6 @@
         </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-    <script src="app.js"></script>
-    <script>
-        const user = 'mullernastasia';
-        const domain = 'gmail.com';
-        const emailSpan = document.getElementById('email-address');
-        emailSpan.innerHTML = `<a href="mailto:${user}@${domain}">${user}@${domain}</a>`;
-    </script>
+    <script src="app-v1.js"></script>
 </body>
 </html> 
