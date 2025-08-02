@@ -110,7 +110,6 @@ function openModal() {
     const modal = document.getElementById("imageModal");
     if (modal) {
         modal.style.display = "block";
-        document.body.style.overflow = "hidden"; // Prevent scrolling when modal is open
         console.log('Modal opened successfully');
     } else {
         console.error('Modal element not found');
@@ -122,7 +121,6 @@ function closeModal() {
     const modal = document.getElementById("imageModal");
     if (modal) {
         modal.style.display = "none";
-        document.body.style.overflow = "auto"; // Restore scrolling
         console.log('Modal closed successfully');
     } else {
         console.error('Modal element not found');
