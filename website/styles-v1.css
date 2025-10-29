@@ -7,6 +7,15 @@ body {
     color: #333;
 }
 
+a, a:link, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px solid #333;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -285,6 +294,17 @@ pre {
     font-weight: bold;
     margin: 0 0 0.5rem 0;
     font-size: 1.2rem;
+}
+
+.publication-list .publication-details .title a,
+.publication-list .publication-details .title a:link,
+.publication-list .publication-details .title a:visited {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.publication-list .publication-details .title a:hover {
+    border-bottom: 1px solid #333;
 }
 
 .publication-list .publication-details .journal {
